@@ -1,6 +1,5 @@
 import React from 'react'
 
-
 const WORD_LENGTH = 5
 
 export const Line: React.FC = ({ guess, isFinal, solution }) => {
