@@ -1,8 +1,14 @@
-import React from 'react'
+import React from 'react';
+
+interface LinePropTypes{
+    guess: string;
+    isFinal: boolean;
+    solution: string;
+}
 
 const WORD_LENGTH = 5
 
-export const Line: React.FC = ({ guess, isFinal, solution }) => {
+export const Line: React.FC<LinePropTypes> = ({ guess, isFinal, solution }) => {
 
     const tiles = [];
 

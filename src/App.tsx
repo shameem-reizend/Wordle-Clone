@@ -21,7 +21,7 @@ export const App: React.FC = () => {
   }
 
   useEffect(() => {
-    const handleType = (e) => {
+    const handleType = (e: KeyboardEvent) => {
 
       if(isGameOver){
         return;
